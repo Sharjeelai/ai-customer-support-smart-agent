@@ -65,10 +65,14 @@ The workflow splits into two distinct paths using *Filter* nodes based on the se
 Below are the visual representations of the n8n canvas and setup:
 
 ### Full Workflow Canvas
-![n8n Workflow Full Canvas](YOUR_IMAGE_FOLDER_OR_URL/1000055934.jpg)
+![n8n Workflow Full Canvas](Screenshot customer email Agent.png)
 
 > *Note for User:* If you have more screenshots of specific node configurations (like the AI Agent setup or Google Sheets), you can add them below using the same format:
-> ![Description](YOUR_IMAGE_FOLDER_OR_URL/YOUR_FILE_NAME.jpg)
+> ![screenshot agent2](Screenshot customer email Agent (2).png]
+
+![screenshot worlfloe][Screenshot customer email Agent.png]
+![screenshot workflow2][Screenshot customer email Agent (2).png]
+
 
 ---
 
@@ -80,7 +84,7 @@ Below are the visual representations of the n8n canvas and setup:
    * Credentials for *Google Sheets, **Gmail, and your **WhatsApp Business API/Provider*.
 
 2. *Importing the Workflow:*
-   * Copy the JSON file of this workflow from this repository.
+   * [Ai powered Customer smart ai Agent.json] Copy the JSON file of this workflow from this repository.
    * Open your n8n dashboard, click on *New Workflow*.
    * Click on the top-right menu and select *Import from File* (or press Ctrl + I and paste the JSON).
 
