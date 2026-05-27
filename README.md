@@ -65,10 +65,10 @@ The workflow splits into two distinct paths using *Filter* nodes based on the se
 Below are the visual representations of the n8n canvas and setup:
 
 ### Full Workflow Canvas
-![n8n Workflow Full Canvas](Screenshot customer email Agent.png)
+![n8n Workflow Full Canvas].(Screenshot customer email Agent.png)
 
 ### Dynamic Node Details & Execution
-![AI Agent Workflow Settings](Screenshot customer email Agent (2).png)
+![AI Agent Workflow Settings].(Screenshot customer email Agent (2).png)
 
 ---
 
