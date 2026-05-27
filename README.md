@@ -15,10 +15,10 @@ Modern companies and customer support teams face an overwhelming volume of daily
 
 ### The Solution (This Workflow)
 This workflow helps businesses automate customer communication and reduce manual support workload. By deploying an autonomous AI pipeline:
-1. *Instant Ingestion & Logging:* Every customer interaction is instantly backed up in centralized sheets for data-driven insights.
-2. *Real-time Emotion Detection:* The system automatically understands if a customer is complaining, asking for a refund, or giving a compliment using advanced LLMs.
-3. *Smart AI Agent Execution:* Instead of rigid canned responses, an AI Agent with memory understands the contextual history of the user and crafts dynamic, natural replies.
-4. *Instant Omni-channel Alerts:* Escalates critical paths immediately via WhatsApp or Gmail, ensuring zero-latency communication.
+* *Instant Ingestion & Logging:* Every customer interaction is instantly backed up in centralized sheets for data-driven insights.
+* *Real-time Emotion Detection:* The system automatically understands if a customer is complaining, asking for a refund, or giving a compliment using advanced LLMs.
+* *Smart AI Agent Execution:* Instead of rigid canned responses, an AI Agent with memory understands the contextual history of the user and crafts dynamic, natural replies.
+* *Instant Omni-channel Alerts:* Escalates critical paths immediately via WhatsApp or Gmail, ensuring zero-latency communication.
 
 ---
 
@@ -41,7 +41,7 @@ Here is how the data flows through the pipeline from start to finish:
 * *Append row in sheet:* The raw details of the email (Sender, Subject, Body, Date) are immediately logged into a Google Sheet for backup and audit trails.
 
 ### 2. AI Sentiment Analysis
-* *Sentiment Analysis Node:* The email body is passed to this node, which is powered by the *OpenAI Chat Model*. 
+* *Sentiment Analysis Node:* The email body is passed to this node, which is powered by the *OpenAI Chat Model*.
 * *Merge Node:* The output branches (Positive/Negative paths) are unified into a structured format containing the assigned sentiment score/tag.
 
 ### 3. Post-Analysis Logging
@@ -53,7 +53,7 @@ The workflow splits into two distinct paths using *Filter* nodes based on the se
 * *Path A (Advanced AI Handling - Top Branch):*
   * *Filter:* Checks for specific criteria/sentiment requiring deep contextual resolution.
   * *AI Agent:* A conversational agent that takes the email context. It is backed by *Simple Memory* to remember context and has direct access to the *Send a message in Gmail* tool to draft and send highly personalized, human-like responses.
-  
+
 * *Path B (Instant Alert/Response - Bottom Branch):*
   * *Filter1:* Targets paths that require immediate notifications or alternative routing.
   * *Send message (WhatsApp):* Sends an instant automated notification or text via WhatsApp to ensure rapid response.
@@ -67,35 +67,31 @@ Below are the visual representations of the n8n canvas and setup:
 ### Full Workflow Canvas
 ![n8n Workflow Full Canvas](Screenshot customer email Agent.png)
 
-> *Note for User:* If you have more screenshots of specific node configurations (like the AI Agent setup or Google Sheets), you can add them below using the same format:
-> ![screenshot agent2](Screenshot customer email Agent (2).png]
-
-![screenshot worlfloe][Screenshot customer email Agent.png]
-![screenshot workflow2][Screenshot customer email Agent (2).png]
-
+### Dynamic Node Details & Execution
+![AI Agent Workflow Settings](Screenshot customer email Agent (2).png)
 
 ---
 
 ## ⚙️ Setup & Installation
 
-1. *Prerequisites:*
-   * Install and set up an *n8n* instance (Self-hosted or Cloud).
-   * An *OpenAI API Key*.
-   * Credentials for *Google Sheets, **Gmail, and your **WhatsApp Business API/Provider*.
+### Prerequisites
+* Install and set up an *n8n* instance (Self-hosted or Cloud).
+* An *OpenAI API Key*.
+* Credentials for *Google Sheets, **Gmail, and your **WhatsApp Business API/Provider*.
 
-2. *Importing the Workflow:*
-   * [Ai powered Customer smart ai Agent.json] Copy the JSON file of this workflow from this repository.
-   * Open your n8n dashboard, click on *New Workflow*.
-   * Click on the top-right menu and select *Import from File* (or press Ctrl + I and paste the JSON).
+### Importing the Workflow
+1. Download or copy the [Ai powered Customer smart ai Agent.json](./Ai%20powered%20Customer%20smart%20ai%20Agent.json) file from this repository.
+2. Open your n8n dashboard and click on *New Workflow*.
+3. Click on the top-right menu and select *Import from File* (or press Ctrl + I and paste the JSON content).
 
-3. *Credential Configuration:*
-   * Link your Google account to the Gmail and Google Sheets nodes.
-   * Add your OpenAI API key to the OpenAI Chat Model nodes.
-   * Configure your WhatsApp node API credentials.
+### Credential Configuration
+* Link your Google account to the Gmail and Google Sheets nodes.
+* Add your OpenAI API key to the OpenAI Chat Model nodes.
+* Configure your WhatsApp node API credentials.
 
-4. *Test & Deploy:*
-   * Click *Execute workflow* to test it with a sample email.
-   * Once working perfectly, toggle the *Active* switch in the top right corner.
+### Test & Deploy
+* Click *Execute workflow* to test it with a sample email.
+* Once working perfectly, toggle the *Active* switch in the top right corner.
 
 ---
 
@@ -107,8 +103,5 @@ This project is open-source and available for learning and portfolio purposes.
 
 ## 👨‍💻 Author
 
-  **Sharjeel.ai**
-  
-  AI Automation Specialist
-  Building intelligent AI
-systems and automation workflows.
+*Sharjeel.ai* 
+AI Automation Specialist Building intelligent AI systems and automation workflows.
