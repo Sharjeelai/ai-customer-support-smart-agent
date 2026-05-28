@@ -103,5 +103,6 @@ This project is open-source and available for learning and portfolio purposes.
 
 ## 👨‍💻 Author
 
-*Sharjeel.ai* 
+*Sharjeel.ai*
+
 AI Automation Specialist Building intelligent AI systems and automation workflows.
